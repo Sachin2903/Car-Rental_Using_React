@@ -5,6 +5,7 @@ import { HeroPage } from './components/templates/heroPage/heroPage';
 import { Faq } from './components/templates/FaQ/faq';
 import { Provider } from 'react-redux';
 import { store } from './Redux/store/carRentalStore';
+import { Subscribe } from './components/templates/subscribePage/subscribe';
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <Provider store={store}>
       <Faq/>
       </Provider>
+      <Subscribe/>
       
 
     </div>
