@@ -1,8 +1,7 @@
 .faqBox {
   padding: 35px;
   width: 100vw;
-  height: 90vh;
-  border: 1px solid black;
+  min-height: 90vh;
   flex-direction: column;
   display: flex;
   justify-content: flex-start;

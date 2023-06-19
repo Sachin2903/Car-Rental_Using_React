@@ -1,8 +1,13 @@
 import { Fragment } from "react";
 import styles from "../../../sass/faq/faq.module.css"
 import { Faquestions } from "../../molecules/faquestion/faquestions";
+import { useSelector } from "react-redux";
 export function Faq(){
-   const  faqContent=[{}];
+  
+   const  faqContent=useSelector((state,action)=>{
+    return state.faqState
+   })
+
     return(
       <Fragment>
         <div className={styles.faqBox}>
@@ -11,7 +16,7 @@ export function Faq(){
              <p className={styles.faqTopText}>Frequently Asked Questions About The Car Rental Booking Process on Our Website Answer To Common Concers and Inquiries</p>
             
              {
-                faqContent.map((e)=><Faquestions/>)
+                faqContent.map((e)=><Faquestions key={e.id} datadetailfaq={e}/>)
              }
         </div>
 

@@ -1,19 +1,26 @@
 import { Fragment } from "react";
 import styles from "../../../sass/questionAnswer/qa.module.css";
-import {FiChevronDown,FiChevronUp} from "react-icons/fi"
-export function Faquestions() {
+import {FiChevronDown,FiChevronUp} from "react-icons/fi";
+import { useDispatch } from "react-redux";
+import { carRentalSlice } from "../../../Redux/slice/carRentalSlice";
+export function Faquestions({datadetailfaq}) {
+    const disFaq=useDispatch();
+    console.log(datadetailfaq);
+    function toogleFaqState(){
+    disFaq(carRentalSlice.actions.toogle(datadetailfaq.id))
+    }
     return (
         <Fragment>
             <div className={styles.faqMainBox}>
-                <div className={false?`${styles.questionBox}`:`${styles.questionBox} ${styles.questionBoxFalse}`} >
-                <p className={styles.bottomtext}>sachin</p>
+                <div onClick={toogleFaqState} className={(datadetailfaq.toogle)?`${styles.questionBox}`:`${styles.questionBox} ${styles.questionBoxFalse}`} >
+                <p className={styles.bottomtext}>{datadetailfaq.question}</p>
                 {
-                    false?<FiChevronDown/>:<FiChevronUp/>
+                    (datadetailfaq.toogle)?<FiChevronDown/>:<FiChevronUp/>
                 }
                 </div>
                 {
-                    false?null:<div className={styles.downExplainBox}>
-                    <p className={styles.bottomtext}></p></div>
+                    (datadetailfaq.toogle)?null:<div className={styles.downExplainBox}>
+                    <p className={styles.bottomtext}>{datadetailfaq.answer}</p></div>
 
                 } 
 
