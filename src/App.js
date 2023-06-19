@@ -6,6 +6,8 @@ import { Faq } from './components/templates/FaQ/faq';
 import { Provider } from 'react-redux';
 import { store } from './Redux/store/carRentalStore';
 import { Subscribe } from './components/templates/subscribePage/subscribe';
+import { Last } from './components/templates/lastSection/last';
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,7 @@ function App() {
       <Faq/>
       </Provider>
       <Subscribe/>
+      <Last/>
       
 
     </div>

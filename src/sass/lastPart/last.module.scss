@@ -1,0 +1,21 @@
+@import "../helper//helperStyle.scss";
+.lastBox{
+    width: 95vw;
+    margin: 0 2vw;
+
+    min-width: 330px;
+    height: 60px;
+    font-family: monospace;
+    background-color: rgb(235, 248, 253);
+    margin-top: 15px;
+    border-top-left-radius: 44px;
+    border-top-right-radius: 44px;
+    padding: 0 20px;
+
+    @include displayFlex(space-between,center);
+}
+.lastIcons{
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
