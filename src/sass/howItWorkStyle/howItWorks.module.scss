@@ -1,5 +1,9 @@
+@import "../helper//helperStyle.scss";
 .howItWork{
     width: 100%;
     min-height: 400px;
-    background-color: aquamarine;
+    padding:25px;
+    @include displayFlex(space-around,center);
+    flex-wrap: wrap;
+   
 }
