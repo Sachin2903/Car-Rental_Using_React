@@ -1,0 +1,14 @@
+.faqBox {
+  padding: 35px;
+  width: 100vw;
+  height: 90vh;
+  border: 1px solid black;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.faqTopText {
+  margin-bottom: 15px;
+}/*# sourceMappingURL=faq.module.css.map */
