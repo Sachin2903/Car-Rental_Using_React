@@ -1,0 +1,99 @@
+@import "../helper/helperStyle.scss";
+
+.navbarBox{
+    position: sticky;
+    top:0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 1px 6px black;
+    @include displayFlex(space-around,center);
+}
+.navList{
+   
+    list-style-type:none;
+    @include displayFlex(space-around,center);
+    gap:30px;
+    cursor: pointer;
+
+}
+.navLogo{
+    height: 100%;
+}
+.navList li a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+.navList li a::after{
+   content:"";
+    display:block;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(40, 194, 255);
+    transition: 1s ;
+}
+.navList li a:hover::after{
+    width: 100%;
+}
+.signUp{
+    box-shadow: 0 1px 3px blue;
+    font-weight: 700;
+    font-family: monospace;
+    width: 75px;
+    margin-right: 10px;
+   border-radius:7px ;
+   border: none;
+   background-color: transparent;
+   letter-spacing: -0.5px;
+   height: 35px;
+}
+.signIn{
+    @extend .signUp;
+    margin-right: 0px;
+    font-weight: bold;
+    color: white;
+    box-shadow: none;
+    background-color: blueviolet;
+
+}
+.signUp:hover,.signIn:hover{
+    transform: scale(0.99)
+}
+.menu{
+    position: absolute;
+    z-index: 9999;
+    left:35vw;
+   font-size: 20px;
+   display: none;
+}
+@media (width<=633px) {
+    .navList{
+        gap:8px;
+    }
+}
+@media (width<=524px) {
+    .navList li a:hover::after{
+        width: 0%;
+    }
+    .navList{
+        z-index: 9999;
+       position:absolute;
+       top:0px;
+       background-color: rgb(255, 228, 228);
+       width: 100%;
+       font-size: 27px;
+       height: 0;
+       transition: height 10s;
+       display: none;
+       padding-top: 20vh;
+       
+    }
+    .navList li{
+        margin-top: 5vh;
+    }
+    .menu{
+    display: block;
+    }
+   
+}

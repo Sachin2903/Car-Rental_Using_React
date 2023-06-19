@@ -1,0 +1,178 @@
+@import "../helper/helperStyle.scss";
+.heroPageBox{
+    width:100vw;
+    @include displayFlex(center,center);
+    flex-direction: row-reverse;
+    height: 90vh;
+    overflow:hidden;
+ 
+}
+.photoBox{
+    border-radius: 35px;
+    height: 90vh;
+    width: 45%;
+    background:linear-gradient(90deg,rgb(236, 242, 180) 70%, rgba(255, 255, 255, 0) 30%);
+}
+.scheduleBox{
+    text-align: left;
+    flex-direction: column;
+    @include displayFlex(center,flex-start);
+    height:90vh;
+    width: 55%;
+    padding-left:5vw ;
+}
+.heroImage{
+    width: 100%;
+    margin-top: 15%;
+    
+}
+
+.lookTo{
+    font-size: 3.5vw;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px black;
+}
+.lookTosave{
+    @extend .lookTo;
+    font-size: 2.5vw;
+}
+.look{
+    color: rgb(255, 102, 0);
+}
+.big{
+    color: red;
+}
+.storeImage{
+    width: 10vw;
+    
+}
+//-schedule
+.schedulestyle{
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+   
+    padding: 4px;
+    border-radius: 6px;   
+}
+.schedule{
+    background-color: white;
+    position: relative;
+   z-index: 1;
+    padding: 6px;
+    width: 58vw;
+    height: 70px;
+    border-radius: 6px;
+    @include displayFlex(space-between,center)
+}
+.schText{
+    font-size: 1vw;
+    font-family: monospace;
+}
+.schedulestyle::before{
+    content: "";
+    position: absolute;
+    width: 150%;
+    top:30%;
+    left: -20%;
+    background-color: orange;
+    height: 20px;
+    animation: rotate 6s infinite ease-in-out;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    } 
+}
+.schedulestyle::after{
+    content:"";
+    position: absolute;
+    width: 150%;
+    top:40%;
+    right: 10%;
+    background-color:rgb(255, 255, 0);
+    height: 20px;
+    animation: rotate 6s  infinite ease-in-out;
+}
+.submitbtn{
+    width: 15vw;
+    max-width: 90px;
+    height: 60%;
+    border-radius: 8px;
+    border:0px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 1.2vw;
+    background-color: blueviolet;
+}
+.submitbtn:hover{
+transform: scale(0.99)
+}
+.location{
+    outline: none;
+    width: 13vw;
+    min-width: 80px;
+     font-size: 1vw;
+    padding: 5px;
+    background-color: rgb(242, 241, 241);
+    border: 0;
+    border-radius: 4px;
+}
+.dateInput{
+    min-width: 85px;
+    outline: none;
+    width: 10vw;
+    font-size: 1vw;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #5eaeff;
+    border:none;
+}
+::-webkit-calendar-picker-indicator{
+   background-color: white;
+   padding: 5px;
+   cursor: pointer;
+   border-radius: 5px;
+}
+@media (width<=618px){
+    .heroPageBox{
+        flex-direction: column;
+       height: fit-content;
+    }
+    .photoBox{
+        height: 40vh;
+        width: 80%;
+    }
+    .heroImage{
+        margin-left: 30px;
+        min-width: 300px;
+    }
+    .scheduleBox{
+        width: 100%;
+        height: auto;
+        border: 1px solid black;
+        padding: 0;
+        @include displayFlex(flex-start,center);
+        
+    }
+    .schedule{
+        width: 90vw;
+    }
+    .lookTosave{
+        font-size: 20px;
+    }
+    .lookTo{
+        font-size: 20px;
+    }
+    .storeImage{
+        width: 80px;
+    }
+}
