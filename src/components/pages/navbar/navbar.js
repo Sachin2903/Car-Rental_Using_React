@@ -18,14 +18,14 @@ export function Navbar(){
     }
     return(
         <Fragment>
-            <div id="home" className={styles.navbarBox}>
+            <div className={styles.navbarBox}>
                <img className={styles.navLogo}alt="Loading" src={logo}/>
                <ul ref={toggleRef} className={styles.navList}>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#home">Ride</a></li>
-                <li><a href="#home">Services</a></li>
-                <li><a href="#home">About</a></li>
-                <li><a href="#home">Review</a></li>
+                <li><a href="#ri">Ride</a></li>
+                <li><a href="#se">Services</a></li>
+                <li><a href="#ab">About</a></li>
+                <li><a href="#re">Review</a></li>
                 </ul>
                 {
                     toggleMenu?<TiThMenu onClick={toggleFun} className={styles.menu}/>:<ImCross className={styles.menu} onClick={toggleFunClose} />

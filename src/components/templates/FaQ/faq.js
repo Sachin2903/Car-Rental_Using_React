@@ -11,7 +11,7 @@ export function Faq(){
 
     return(
       <Fragment>
-        <div className={styles.faqBox}>
+        <div id="ri" className={styles.faqBox}>
           <img alt="Loading" className={styles.rollsImg} src={rolls}/>
             <h5 className={styles.faqTopText}>FAQ</h5>
             <h3 className={styles.faqTopText}>Frequently Asked Questions</h3>

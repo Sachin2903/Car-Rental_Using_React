@@ -14,7 +14,7 @@ export function VariousCars() {
 
     return (
         <Fragment>
-            <div className={styles.carMainBox}>
+            <div id="se" className={styles.carMainBox}>
                 <h4>Vehicle Models</h4>
                 <h2>Our Rental Cars</h2>
                 <p>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</p>

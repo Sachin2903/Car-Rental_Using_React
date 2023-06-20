@@ -11,7 +11,7 @@ export function HowItWorks(){
    const a=[{img:location,title:"Choose A Location",message:loca},{img:calender,title:"Pick-Up Date",message:dat},{img:done,title:"Book A Car",message:don}]
     return (
         <Fragment>
-            <h5>Plan your trip now</h5>
+            <h5 id="ab">Plan your trip now</h5>
             <h2>Quik & easy car rental</h2>
             <div className={styles.howItWork} >
                 {

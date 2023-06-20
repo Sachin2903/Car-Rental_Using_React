@@ -1,23 +1,38 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import styles from "./customer.module.css";
-export function HappyCustomer(){
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
+export function HappyCustomer() {
+    const [count, setCount] = useState(false);
     return (
         <Fragment>
+            <ScrollTrigger onEnter={()=>setCount(true)} onExit={()=>setCount(false)}>
             <div className={styles.countDounnBox}>
+                
                 <div>
-                    <h3>4000+</h3>
+                    {
+                        count && <CountUp className={styles.count} start={0} end={4000} duration={5} delay={0} />
+                    }
+
                     <h3>Successfull Ride</h3>
                 </div>
                 <div>
-                    <h3>5000+</h3>
+                    {
+                        count && <CountUp className={styles.count} start={0} end={5000} duration={5} delay={0} />
+                    }
+
                     <h3>Happy Customers</h3>
                 </div>
                 <div>
-                    <h3>52+</h3>
+                    {
+                        count && <CountUp className={styles.count} start={0} end={52} duration={5} delay={0} />
+                    }
+
                     <h3>Cities</h3>
                 </div>
-
+               
             </div>
+            </ScrollTrigger>
         </Fragment>
     )
 }

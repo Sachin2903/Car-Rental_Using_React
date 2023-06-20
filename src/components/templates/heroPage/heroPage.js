@@ -16,7 +16,7 @@ function deleteFiels(){
 }
     return (
         <Fragment>
-            <div className={styles.heroPageBox}>
+            <div id="home" className={styles.heroPageBox}>
                 <div className={styles.photoBox}>
                     <img className={styles.heroImage} alt="Loading" src={scropio} />
                 </div>
