@@ -1,10 +1,19 @@
-import React, { Fragment, useState, useRef } from "react";
+import React, { Fragment, useRef } from "react";
 import styles from "../../../sass/heroPageStyle/heroPage.module.css";
 import scropio from "../../../images/scorpio.png"
 import play from "../../../images/playstore.png";
 import appstore from "../../../images/appstore.png";
 
 export function HeroPage() {
+    const inputref=useRef("");
+    const inputref1=useRef("");
+    const inputref2=useRef("");
+function deleteFiels(){
+  
+        inputref.current.value=""
+        inputref1.current.value=""
+        inputref2.current.value=""
+}
     return (
         <Fragment>
             <div className={styles.heroPageBox}>
@@ -23,17 +32,17 @@ export function HeroPage() {
                         <div className={styles.schedule}>
                             <div>
                                 <p className={styles.schText}>Location</p>
-                                <input placeholder="Search Places" className={styles.location}/>
+                                <input ref={inputref2} placeholder="Search Places" className={styles.location}/>
                             </div>
                             <div>
                                 <p className={styles.schText}>Pick-Up Date</p>
-                                <input className={styles.dateInput}  type="date"/>
+                                <input ref={inputref1} className={styles.dateInput}  type="date"/>
                             </div>
                             <div>
                                 <p className={styles.schText}>Return Date</p>
-                                <input className={styles.dateInput} type="date" />
+                                <input ref={inputref} className={styles.dateInput} type="date" />
                             </div>
-                            <button className={styles.submitbtn}>Submit</button>
+                            <button onClick={deleteFiels} className={styles.submitbtn}>Submit</button>
 
                         </div>
                     </div>

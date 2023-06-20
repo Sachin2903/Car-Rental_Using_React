@@ -9,6 +9,7 @@ import { Subscribe } from './components/templates/subscribePage/subscribe';
 import { Last } from './components/templates/lastSection/last';
 import { Testimonial } from './components/templates/testimonialsection/testimonial';
 import { VariousCars } from './components/templates/variousCars/variousCar';
+import { HappyCustomer } from './components/templates/happyCustomer/customer';
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
       <HeroPage />
       <HowItWorks />
 
-
+       <HappyCustomer/>
       <Provider store={store}>
         <VariousCars />
         <Testimonial />
