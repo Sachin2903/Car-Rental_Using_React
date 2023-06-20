@@ -3,6 +3,7 @@
   width: 100vw;
   min-height: 90vh;
   flex-direction: column;
+  background-color: rgb(253, 230, 251);
   display: flex;
   justify-content: flex-start;
   align-items: center;

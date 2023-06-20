@@ -1,6 +1,6 @@
 @import "../helper/helperStyle.scss";
 .heroPageBox{
-   
+    background-color: $backColor;
     width:100vw;
     @include displayFlex(center,center);
     flex-direction: row-reverse;

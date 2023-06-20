@@ -5,6 +5,7 @@
     width: 100vw;
     min-height: 90vh;
     flex-direction: column;
+    background-color:$backColor;
     @include displayFlex(flex-start,center)
 }
 .faqTopText{

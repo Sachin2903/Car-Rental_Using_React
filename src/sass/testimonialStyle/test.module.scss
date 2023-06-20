@@ -3,7 +3,7 @@
 .testMainBox{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(253, 230, 251);
+    background-color:$backColor;
     @include displayFlex(center,center);
     flex-direction: column;
 }
