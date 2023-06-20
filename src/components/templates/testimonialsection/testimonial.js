@@ -5,16 +5,16 @@ import men from "../../../images/test/men.jpg";
 import uncle from "../../../images/test/uncle.jpg";
 import { ImQuotesLeft } from "react-icons/im"
 export function Testimonial() {
-    const [client, setClient] = useState(["Before arriving,they were really helpful via email with the doubts and questions. When we arrived, they were already waiting for us. Gave us the car (really new and clean). Everything was great. Best choice", "Mr. Ram tiwari", [true, true, false]])
+    const [client, setClient] = useState(["Before arriving,they were really helpful via email with the doubts and questions.When we arrived, they were already waiting for us.Gave us (new and clean) car. Everything was great. Best choice", "Mr. Ram tiwari", [true, true, false]])
     const testDummy = ["We were very satisfied with the organization of picking up the car at the airport and dropping it off .There were no problems and the car served our purpose. I definitely recommend it!",
         "Very nice and competent contact person, tries very hard to organize everything to the satisfaction of the customer! Very friendly communication English! Many thanks for everything",
-        "Before arriving, they were really helpful via email with the doubts and questions. When we arrived,they were already waiting for us. Gave us the car (really new and clean). Everything was great. Best choice"];
+        "Before arriving,they were really helpful via email with the doubts and questions.When we arrived,they were already waiting for us.Gave us (new and clean) car. Everything was great. Best choice"];
     const clientName = ["Mr. Rohan Gour", "Mr. Amit Sharma", "Mr. Ram tiwari"];
     function changeClient(id) {
         let a = []
-        if (id == 0) {
+        if (id === 0) {
             a = [false, true, true];
-        } else if (id == 1) {
+        } else if (id === 1) {
             a = [true, false, true];
         } else {
             a = [true, true, false];

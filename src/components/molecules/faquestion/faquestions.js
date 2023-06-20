@@ -1,4 +1,4 @@
-import { Fragment,useEffect } from "react";
+import { Fragment} from "react";
 import styles from "../../../sass/questionAnswer/qa.module.css";
 import {FiChevronDown,FiChevronUp} from "react-icons/fi";
 import { useDispatch } from "react-redux";
