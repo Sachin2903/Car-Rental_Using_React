@@ -8,7 +8,6 @@ import { carRentalSlice } from "../../../Redux/slice/carRentalSlice";
 export function Faquestions({datadetailfaq}) {
  
     const disFaq=useDispatch();
-    console.log(datadetailfaq);
     function toogleFaqState(){
     disFaq(carRentalSlice.actions.toogle(datadetailfaq.id))
     }

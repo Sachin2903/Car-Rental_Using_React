@@ -13,19 +13,19 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <HeroPage/>
-      <HowItWorks/>
-   
+      <HeroPage />
+      <HowItWorks />
+
       <Provider store={store}>
-    <VariousCars/>
-    <Testimonial/>
-      <Faq/>
-      
+        <VariousCars />
+        <Testimonial />
+        <Faq />
+
       </Provider>
-      
-      <Subscribe/>
-      <Last/>
-      
+
+      <Subscribe />
+      <Last />
+
 
     </div>
   );

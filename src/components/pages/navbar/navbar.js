@@ -1,6 +1,6 @@
 import React,{Fragment,useState,useRef} from "react";
 import styles from "../../../sass/navbarStyle/navbar.module.css";
-import logo from "../../../images/logo.png";
+import logo from "../../../images/logo.jpg";
 import {TiThMenu} from "react-icons/ti";
 import {ImCross} from "react-icons/im"
 export function Navbar(){

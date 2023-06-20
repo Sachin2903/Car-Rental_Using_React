@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { carRentalSlice } from "../slice/carRentalSlice";
-import { testSlice } from "../slice/testSlice/testSlice";
+import {carModelSlice } from "../slice/carModel/carModelDetails";
 export const store=configureStore({
     reducer:{
         faqState:carRentalSlice.reducer,
-        testToogle:testSlice.reducer
+        carModelToogle:carModelSlice.reducer
     }
     
 })

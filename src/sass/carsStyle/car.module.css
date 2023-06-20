@@ -1,45 +1,140 @@
 .carMainBox {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   border-radius: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: rgb(253, 230, 251);
+  gap: 10px;
 }
 
 .carModelBox {
-  width: 55vw;
+  margin-top: 10px;
+  width: 65vw;
   min-width: 370px;
   min-height: 400px;
-  background-color: aquamarine;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .CarNames, .carsDetails {
-  width: 25%;
+  width: 170px;
   height: 400px;
+  padding: 0 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carsDetails {
+  width: 220px;
 }
 
 .carsImg {
   width: 50%;
   height: 400px;
-  border: 5px solid black;
 }
 
 .carsOnlyName {
+  cursor: pointer;
   border-radius: 8px;
   background-color: white;
   box-shadow: 1px 1px 0px black, -1px -1px 0px white;
-  width: 100%;
-  height: 15%;
-  margin-bottom: 8px;
+  width: 125px;
+  height: 60px;
   border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 600;
   font-size: 15px;
+}
+
+.carsOnlyNameFalse {
+  transform: scale(0.8);
+  background-color: red;
+  color: white;
+}
+
+.carsOnlyName:hover {
+  transform: scale(0.8);
+}
+
+.contentTable {
+  width: 100%;
+  background-color: white;
+  height: 80%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tableHead {
+  width: 100%;
+  background-color: red;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subTable {
+  border-top: 2px solid black;
+  min-width: 90px;
+  height: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.tableBtn {
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 6px;
+  border: 0;
+  box-shadow: 1px 1px 0px black;
+}
+
+.tableBtn:hover {
+  transform: scale(0.99);
+}
+
+@media (width <= 1155px) {
+  .carModelBox {
+    width: 100vw;
+  }
+}
+@media (width <= 710px) {
+  .carModelBox {
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .CarNames, .carsDetails {
+    flex-direction: row;
+    width: 100vw;
+    gap: 15px;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 15px 0;
+  }
+  .carsImg {
+    width: 80vw;
+    margin: 5px;
+  }
+  .contentTable {
+    width: 60vw;
+    height: 350px;
+    margin: 0 15vw;
+  }
 }/*# sourceMappingURL=car.module.css.map */
