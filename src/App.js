@@ -14,8 +14,9 @@ function App() {
       <Navbar />
       <HeroPage/>
       <HowItWorks/>
-      <Provider store={store}>
       <Testimonial/>
+      <Provider store={store}>
+    
       <Faq/>
       
       </Provider>

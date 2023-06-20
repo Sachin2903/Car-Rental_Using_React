@@ -5,14 +5,8 @@ import { useDispatch } from "react-redux";
 import { carRentalSlice } from "../../../Redux/slice/carRentalSlice";
 
 
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-
-
 export function Faquestions({datadetailfaq}) {
-    useEffect(()=>{
-        Aos.init();
-    },[])
+ 
     const disFaq=useDispatch();
     console.log(datadetailfaq);
     function toogleFaqState(){
@@ -28,7 +22,7 @@ export function Faquestions({datadetailfaq}) {
                 }
                 </div>
                 {
-                    (datadetailfaq.toogle)?null:<div data-aos="fade-down" className={styles.downExplainBox}>
+                    (datadetailfaq.toogle)?null:<div className={styles.downExplainBox}>
                     <p className={styles.bottomtext}>{datadetailfaq.answer}</p></div>
 
                 } 
