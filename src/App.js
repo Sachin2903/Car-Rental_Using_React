@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import { store } from './Redux/store/carRentalStore';
 import { Subscribe } from './components/templates/subscribePage/subscribe';
 import { Last } from './components/templates/lastSection/last';
-
+import { Testimonial } from './components/templates/testimonialsection/testimonial';
 function App() {
   return (
     <div className="App">
@@ -15,8 +15,11 @@ function App() {
       <HeroPage/>
       <HowItWorks/>
       <Provider store={store}>
+      <Testimonial/>
       <Faq/>
+      
       </Provider>
+      
       <Subscribe/>
       <Last/>
       

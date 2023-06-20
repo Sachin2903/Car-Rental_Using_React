@@ -23,12 +23,13 @@
  background-color:white;
 }
 .downExplainBox{
-    transition: height 100s linear;
+
     border-radius: 6px;
     width: 40vw;
     min-width: 350px;
     min-height: 55px;
     padding: 10px;
+    margin-top: 10px;
 }
 .bottomtext{
     width: 95%;
@@ -38,4 +39,7 @@
 .questionBoxFalse{
     background-color: red;
     color: white;
+}
+::selection{
+    background-color: transparent;
 }
