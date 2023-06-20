@@ -28,8 +28,8 @@ export function Testimonial() {
     return (
         <Fragment>
             <div id="re" className={styles.testMainBox}>
-                <img className={styles.audiPic} src={oodi}/>
-                <img className={styles.gcarPic}src={gcar}/>
+                <img alt="Loading" className={styles.audiPic} src={oodi}/>
+                <img alt="Loading" className={styles.gcarPic}src={gcar}/>
                 <h6>REVIEWS</h6>
                 <h2>Whats Our Customer Say</h2>
 

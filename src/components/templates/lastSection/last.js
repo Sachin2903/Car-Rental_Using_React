@@ -7,7 +7,7 @@ export function Last(){
     return (
         <Fragment>
             <div className={styles.lastBox}>
-               <p>By Sachin Chaturvedi</p>
+               <p>Developed By Sachin Chaturvedi</p>
                <p><FaRegCopyright/>All Right Reserved</p>
               <span>
                 <BsFacebook className={styles.lastIcons}/>
