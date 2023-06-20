@@ -1,6 +1,7 @@
 @import "../helper//helperStyle.scss";
 
 .testMainBox{
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-color:$backColor;
@@ -65,4 +66,30 @@
     word-break: break-all;
     padding: 15px;
    
+}
+.gcarPic{
+    position: absolute;
+    right: -70px;
+    z-index: 9999;
+    width: 450px;
+}
+.audiPic{
+    position: absolute;
+    left: -50px;
+    bottom: -150px;
+    z-index: 9999;
+    width: 350px;
+}
+@media (width<=1000px) {
+    .gcarPic{
+        display: none;
+    }
+    .audiPic{
+        bottom: -50px;
+    }
+}
+@media (width<=450px) {
+    .audiPic{
+        width: 250px;
+    }
 }

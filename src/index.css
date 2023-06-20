@@ -14,3 +14,6 @@ code {
 ::selection{
   background-color: transparent;
 }
+::-webkit-scrollbar{
+  display:none;
+}

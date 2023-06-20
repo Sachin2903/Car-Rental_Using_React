@@ -3,7 +3,9 @@ import styles from "../../../sass/testimonialStyle/test.module.css";
 import boy from "../../../images/test/boy.jpg";
 import men from "../../../images/test/men.jpg";
 import uncle from "../../../images/test/uncle.jpg";
-import { ImQuotesLeft } from "react-icons/im"
+import { ImQuotesLeft } from "react-icons/im";
+import gcar from "../../../images/Gwagon.png";
+import oodi from "../../../images/audi.png";
 export function Testimonial() {
     const [client, setClient] = useState(["Before arriving,they were really helpful via email with the doubts and questions.When we arrived, they were already waiting for us.Gave us (new and clean) car. Everything was great. Best choice", "Mr. Ram tiwari", [true, true, false]])
     const testDummy = ["We were very satisfied with the organization of picking up the car at the airport and dropping it off .There were no problems and the car served our purpose. I definitely recommend it!",
@@ -26,6 +28,8 @@ export function Testimonial() {
     return (
         <Fragment>
             <div className={styles.testMainBox}>
+                <img className={styles.audiPic} src={oodi}/>
+                <img className={styles.gcarPic}src={gcar}/>
                 <h6>REVIEWS</h6>
                 <h2>Whats Our Customer Say</h2>
 

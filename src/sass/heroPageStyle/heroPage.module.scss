@@ -25,6 +25,7 @@
 .heroImage{
     width: 100%;
     margin-top: 15%;
+    transform: scale(1.3);
     
     
 }
@@ -32,7 +33,6 @@
 .lookTo{
     font-size: 3.5vw;
     font-weight: 700;
-    text-shadow: 1px 1px 1px black;
 }
 .lookTosave{
     @extend .lookTo;

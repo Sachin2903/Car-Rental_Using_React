@@ -9,12 +9,17 @@ import { Subscribe } from './components/templates/subscribePage/subscribe';
 import { Last } from './components/templates/lastSection/last';
 import { Testimonial } from './components/templates/testimonialsection/testimonial';
 import { VariousCars } from './components/templates/variousCars/variousCar';
+
 function App() {
+
+
+
   return (
     <div className="App">
       <Navbar />
       <HeroPage />
       <HowItWorks />
+
 
       <Provider store={store}>
         <VariousCars />

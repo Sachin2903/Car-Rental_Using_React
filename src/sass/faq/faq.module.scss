@@ -1,6 +1,7 @@
 @import "../helper/helperStyle.scss";
 
 .faqBox{
+    position: relative;
     padding: 35px;
     width: 100vw;
     min-height: 90vh;
@@ -10,4 +11,10 @@
 }
 .faqTopText{
     margin-bottom: 15px;
+}
+.rollsImg{
+    position: absolute;
+    width: 350px;
+    bottom: -45px;
+    z-index: 999;
 }
