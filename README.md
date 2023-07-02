@@ -2,7 +2,6 @@
 <h1 align="center">Car Rental 👋</h1>
 
 
-
 # Car Rental: (Using React)
 A Frontend Project(using React) also added functionality for user interaction.The Car Rental website provides an interface that allows users to rent cars for personal and business use
 
